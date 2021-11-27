@@ -126,6 +126,65 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="wE9-Po-W2L">
+            <objects>
+                <viewController id="7V8-Im-SSy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UfL-Kz-g9s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="nEr-5b-aAE">
+                                <rect key="frame" x="0.0" y="94" width="414" height="148"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total per person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qs3-ng-DdS">
+                                        <rect key="frame" x="104" y="0.0" width="206" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="040-gc-Nn0" userLabel="ResultLabel">
+                                        <rect key="frame" x="177.5" y="65" width="59" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split between 2 people, with 10% tip" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZd-kP-Nu1">
+                                        <rect key="frame" x="48.5" y="124" width="317" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhA-Sb-9ZR">
+                                <rect key="frame" x="107" y="812" width="200" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cyp-17-qBJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="vKC-gX-kFt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Recalculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yhx-rk-J54"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yhx-rk-J54" firstAttribute="bottom" secondItem="hhA-Sb-9ZR" secondAttribute="bottom" id="28l-kp-iVe"/>
+                            <constraint firstItem="nEr-5b-aAE" firstAttribute="leading" secondItem="yhx-rk-J54" secondAttribute="leading" id="QlH-UC-vHq"/>
+                            <constraint firstItem="nEr-5b-aAE" firstAttribute="top" secondItem="yhx-rk-J54" secondAttribute="top" constant="50" id="a7e-F8-pDr"/>
+                            <constraint firstItem="hhA-Sb-9ZR" firstAttribute="centerX" secondItem="UfL-Kz-g9s" secondAttribute="centerX" id="jpJ-gi-maf"/>
+                            <constraint firstItem="yhx-rk-J54" firstAttribute="trailing" secondItem="nEr-5b-aAE" secondAttribute="trailing" id="p0F-J1-FTM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXV-pK-eyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991.304347826087" y="115.84821428571428"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

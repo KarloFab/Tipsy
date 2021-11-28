@@ -89,16 +89,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="BZm-0R-vEK">
-                                        <rect key="frame" x="90" y="241" width="194.5" height="32"/>
+                                        <rect key="frame" x="88.5" y="241" width="197.5" height="32"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9l-TD-7Wn">
-                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="32"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9l-TD-7Wn">
+                                                <rect key="frame" x="0.0" y="0.0" width="13.5" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="web-dT-yJr">
-                                                <rect key="frame" x="100.5" y="0.0" width="94" height="32"/>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="web-dT-yJr">
+                                                <rect key="frame" x="103.5" y="0.0" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Yec-vR-fmZ"/>
                                                 </connections>
@@ -191,6 +191,9 @@
                                 <state key="normal" title="Recalculate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="7V8-Im-SSy" eventType="touchUpInside" id="tVQ-Zj-hic"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yhx-rk-J54"/>
@@ -203,6 +206,10 @@
                             <constraint firstItem="yhx-rk-J54" firstAttribute="trailing" secondItem="nEr-5b-aAE" secondAttribute="trailing" id="p0F-J1-FTM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="splitLabel" destination="nZd-kP-Nu1" id="c8D-pF-uOr"/>
+                        <outlet property="totalLabel" destination="040-gc-Nn0" id="H8k-ad-2az"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXV-pK-eyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,10 +19,10 @@ class CalculateViewController: UIViewController {
     var numberOfPeople = 2
     var billTotal = 0.0
     var finalResult = "0.0"
+    var segueIdentifier = "goToResults"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {
@@ -55,7 +55,17 @@ class CalculateViewController: UIViewController {
         
         print(finalResult)
         
-        self.performSegue(withIdentifier: "goToResults", sender: self)
+        self.performSegue(withIdentifier: segueIdentifier, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueIdentifier {
+            
+            let destinationVC = segue.destination as! ResultViewController
+            destinationVC.result = finalResult
+            destinationVC.numberOfPeople = numberOfPeople
+            destinationVC.tip = Int(tip * 100)
+        }
     }
 }
 
